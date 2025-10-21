@@ -1,6 +1,6 @@
 <?php
 require 'vendor/autoload.php';
- \Stripe\Stripe::setApiKey('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');
+ \Stripe\Stripe::setApiKey('your_stripe_api_key');
 
   $checkout_session = \Stripe\Checkout\Session::create([
       'success_url' => 'https://billingbizz.com/success.php?session_id={CHECKOUT_SESSION_ID}',
@@ -46,4 +46,5 @@ require 'vendor/autoload.php';
   </script>
   
 </body>
+
 
