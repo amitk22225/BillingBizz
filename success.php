@@ -4,7 +4,7 @@ require 'config.php';
 session_start();
 
 
-\Stripe\Stripe::setApiKey('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');
+\Stripe\Stripe::setApiKey('your_stripe_api_key');
 
 $session_id = $_GET['session_id'];
 
@@ -78,4 +78,5 @@ if($paymentStatus == 'unpaid'){
       <a href="index.php">HOME</a>.
     </p>
   </body>
+
 </html> -->
